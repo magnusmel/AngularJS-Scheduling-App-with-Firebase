@@ -20,12 +20,16 @@ angular.module('scheduleApp', ['firebase'])
             day1: {
                 name: 'Monday',
                 slots: {
-                    0900: {
+                    num1: {
                         time: '9 a.m.',
                         booked: false
                     },
-                    0110: {
+                    num2: {
                         time: '11 a.m.',
+                        booked: false
+                    },
+                    num3: {
+                        time: '1 p.m.',
                         booked: false
                     }
                 }
@@ -33,12 +37,16 @@ angular.module('scheduleApp', ['firebase'])
             day2: {
                 name: 'Tuesday',
                 slots: {
-                    0900: {
+                    num1: {
                         time: '9 a.m.',
                         booked: false
                     },
-                    0110: {
+                    num2: {
                         time: '11 a.m.',
+                        booked: false
+                    },
+                    num3: {
+                        time: '1 p.m.',
                         booked: false
                     }
                 }
@@ -46,12 +54,16 @@ angular.module('scheduleApp', ['firebase'])
             day3: {
                 name: 'Wednesday',
                 slots: {
-                    0900: {
+                    num1: {
                         time: '9 a.m.',
                         booked: false
                     },
-                    0110: {
+                    num2: {
                         time: '11 a.m.',
+                        booked: false
+                    },
+                    num3: {
+                        time: '1 p.m.',
                         booked: false
                     }
                 }
@@ -59,12 +71,16 @@ angular.module('scheduleApp', ['firebase'])
             day4: {
                 name: 'Thursday',
                 slots: {
-                    0900: {
+                    num1: {
                         time: '9 a.m.',
                         booked: false
                     },
-                    0110: {
+                    num2: {
                         time: '11 a.m.',
+                        booked: false
+                    },
+                    num3: {
+                        time: '1 p.m.',
                         booked: false
                     }
                 }
@@ -72,12 +88,16 @@ angular.module('scheduleApp', ['firebase'])
             day5: {
                 name: 'Friday',
                 slots: {
-                    0900: {
+                    num1: {
                         time: '9 a.m.',
                         booked: false
                     },
-                    0110: {
+                    num2: {
                         time: '11 a.m.',
+                        booked: false
+                    },
+                    num3: {
+                        time: '1 p.m.',
                         booked: false
                     }
                 }
