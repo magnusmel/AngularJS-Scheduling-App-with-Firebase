@@ -26,7 +26,7 @@ The tutorial uses AngularFire 0.8.0, which includes the $firebase service and $s
   ```
 
 
-##### Updated
+##### Update
 ```javascript
 .controller('mainController', function ($scope, $firebaseObject) {
 
@@ -37,4 +37,4 @@ The tutorial uses AngularFire 0.8.0, which includes the $firebase service and $s
     syncObject.$bindTo($scope, 'days');
 ```
 
-Read more about changes since AngularFire 1.x in Firebase's [migration guides.](https://www.firebase.com/docs/web/libraries/angular/migration-guides.html)
+Read more about the changes to AngularFire since version 1.x in Firebase's [migration guides.](https://www.firebase.com/docs/web/libraries/angular/migration-guides.html)
