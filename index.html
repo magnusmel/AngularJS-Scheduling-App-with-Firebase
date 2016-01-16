@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <title>AngularJS Scheduling App</title>
 
-        <link rel="stylesheet" href=""http://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/journal/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/journal/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
@@ -22,12 +22,17 @@
             </div>
 
             <div class="row times">
-                <div class="col-xs-4 text-center">
+                <div class="col-xs-4 text-center" ng-repeat="day in days">
 
-                    <h2>Monday</h2>
-                    <div class="time-slot">
-                        <input type="checkbox" id="monday-time">
-                        <label for="monday-time">9:00 a.m.</label>
+                    <h2>{{ day.name }}</h2>
+                    <div class="time-slot" ng-repeat="slot in day.slots">
+
+                        <input type="checkbox" id="{{ day.name }}-{{ $index }}" ng-model="slot.booked" ng-disabled="slot.booked">
+
+                        <label for="{{ day.name }}-{{ $index }}">{{ slot.time }}<br>
+                            <span ng-if="slot.booked">Booked</span>
+                            <span ng-if="!slot.booked">Available</span>
+                        </label>
                     </div>
 
                 </div>
